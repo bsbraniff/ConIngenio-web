@@ -1,0 +1,153 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BOTÓN INFO */
+.btn-info-custom {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+
+  padding: 6px 14px;   /* 👈 aquí se hace pequeño de verdad */
+  font-size: 13px;     /* 👈 texto más compacto */
+  border-radius: 18px; /* 👈 menos “grande” visualmente */
+
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+}
+.btn-info-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.6);
+}
+
+
+
+
+/* CARDS */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* BOTÓN MODO */
+#modo-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 18px;
+}
+
+/* 🌙 DARK MODE GLOBAL */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode label,
+.dark-mode span {
+  color: #000 !important;
+}
+
+/* FIX BOOTSTRAP text-muted */
+.dark-mode .text-muted {
+    color: #333 !important;
+}
+
+/* LEAD */
+.dark-mode .lead {
+    color: #f1f1f1 !important;
+}
+
+.dark-mode a {
+  color: #4da3ff !important;
+}
+
+.dark-mode .navbar {
+  background-color: #111 !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+  color: #fff !important;
+}
+
+/* CARDS (FONDO CLARO PARA BUENA LEGIBILIDAD) */
+.dark-mode .card {
+  background-color: #ffffff !important;
+}
+
+/* TEXTO DENTRO DE LAS CARDS (ESTO ERA LO QUE FALLABA) */
+.dark-mode .card-title,
+.dark-mode .card-text,
+.dark-mode .beneficios li {
+  color: #ffffff !important;
+}
+
+.dark-mode .card,
+.dark-mode .card-body {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1 !important;
+}
+.dark-mode .btn-info-custom {
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .btn-info-custom:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+.dark-mode .footer {
+  background-color: #000 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .footer p {
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px !important;
+    }
+}
+

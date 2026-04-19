@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.bienvenidos-animado {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.bienvenidos-animado:hover {
+  color: #0d6efd;
+  transform: scale(1.1);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #0d6efd;
+}
+
+.nav-link {
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('../img/1.png') no-repeat center/cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 80px 20px;
+  color: white
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4); 
+  z-index: -1; 
+}
+
+
+.btn-servicios {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-servicios:hover {
+  background-color: #0056b3;
+}
+
+
+
+.card {
+  border-radius: 1rem;
+}
+
+#userGrid .card {
+  border-left: 5px solid #0d6efd;
+}
+
+#userGrid .card-body {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+#userGrid .card-title {
+  margin-bottom: 0.5rem;
+  color: #0d6efd;
+}
+.user-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #0d6efd;
+  background-color: #fff;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border: 2px solid #0d6efd;
+}
+
+
+.admin-card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.icon-container {
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.info-link {
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: 500;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.servicio-box {
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.servicio-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+
+
+.icono-servicio {
+  font-size: 35px;
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+
+
+
+  /* footer */
+.footer {
+    background-color: #222; 
+    color: #ccc;            
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.error-message {
+  min-height: 18px;
+}
+
+#modo-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* textos generales */
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode label,
+.dark-mode span,
+.dark-mode a {
+    color: white !important;
+}
+
+/* cards */
+.dark-mode .card,
+.dark-mode .servicio-box,
+.dark-mode .form-box,
+.dark-mode .card-nosotros {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* navbar */
+.dark-mode .navbar {
+    background-color: #111 !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+    color: white !important;
+}
+
+
+
+.dark-mode .form-control {
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .footer {
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    color: black;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}

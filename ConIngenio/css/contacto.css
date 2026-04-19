@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+/* Fondo con imagen y opacidad */
+.contact-section {
+    position: relative;
+    background: url('../img/fondo1.avif') no-repeat center center/cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  100px 20px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 3;
+}
+
+.contact-info,
+.contact-info p,
+.contact-info strong,
+.contact-info h2 {
+    color: white;
+}
+
+.contact-info {
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.contact-info h2 {
+    font-weight: bold;
+    font-size:60px;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+.contact-info strong {
+    font-size: 1.6rem; /* resalta "Dirección", "Teléfono", etc */
+}
+
+.social-icons a {
+    color: #ffa500;
+    font-size: 4.0rem;
+    margin-right: 30px;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.form-box input.form-control,
+.form-box textarea.form-control,
+.form-box select.form-select {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 1.5px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-box input.form-control:focus,
+.form-box textarea.form-control:focus,
+.form-box select.form-select:focus {
+    border-color: #ffb500; 
+    box-shadow: 0 0 8px rgba(255, 181, 0, 0.6);
+    outline: none;
+}
+
+/* Botón personalizado color naranjo */
+.btn-naranjo {
+    background-color: #ffa500; 
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-naranjo:hover {
+    background-color: #e69500; 
+}
+
+/* Botón más moderno y corto */
+.btn-custom {
+    width: 250px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+#modo-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+}
+
+  /* footer */
+.footer {
+    background-color: #222; 
+    color: #ccc;            
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* textos generales */
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode label,
+.dark-mode span,
+.dark-mode a {
+    color: white !important;
+}
+
+/* cards */
+.dark-mode .card,
+.dark-mode .servicio-box,
+.dark-mode .form-box,
+.dark-mode .card-nosotros {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* navbar */
+.dark-mode .navbar {
+    background-color: #111 !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+    color: white !important;
+}
+
+.dark-mode .form-box {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+
+.dark-mode .form-control {
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .footer {
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px !important;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .form-box {
+        margin-top: 30px;
+    }
+}

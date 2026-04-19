@@ -1,0 +1,142 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* TARJETAS INTERACTIVAS */
+.card-nosotros {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-nosotros:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ICONO */
+.icono {
+    width: 70px;
+    height: 70px;
+    background-color: #e9f0ff;
+    color: #0d6efd;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+/* EFECTO ICONO */
+.card-nosotros:hover .icono {
+    background-color: #0d6efd;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* IMAGEN */
+.img-sobre {
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.img-sobre:hover {
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* BOTÓN MODO */
+#modo-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+}
+
+/* DARK MODE GLOBAL */
+.dark-mode {
+    background-color: #121212;
+}
+
+/* EVITAR CONFLICTOS CON BOOTSTRAP */
+.dark-mode .card-nosotros,
+.dark-mode .card,
+.dark-mode .img-sobre {
+    background-color: #ffffff !important;
+}
+
+/* TODO EL TEXTO SIEMPRE NEGRO */
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode label,
+.dark-mode span,
+.dark-mode a,
+.dark-mode .text-muted,
+.dark-mode .lead {
+    color: #000 !important;
+}
+/* FIX BOOTSTRAP text-muted */
+.dark-mode .text-muted {
+    color: #d6d6d6 !important;
+}
+
+/* LEAD */
+.dark-mode .lead {
+    color: #111 !important;
+}
+.dark-mode a {
+    color: #4da3ff !important;
+}
+
+.dark-mode .navbar {
+    background-color: #111 !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+    color: #fff !important;
+}
+
+.dark-mode .card-nosotros {
+    background-color: #1e1e1e !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .footer {
+    background-color: #000 !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .footer p {
+    color: #ffffff !important;
+}
+
+.texto-normal {
+    color: #000 !important;
+}
+@media (max-width: 768px) {
+    .form-box {
+        width: 100% !important;
+        height: auto !important;
+        padding: 20px !important;
+    }
+}
